@@ -69,6 +69,7 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     background-image: url(../src/images/banner-overlay-img.png);
     color: white;
     font-family:OswaldMedium;
+    flex-wrap: wrap;
 }
 
 .contact h2 {
@@ -86,7 +87,10 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     flex-direction: row;
     width: 40%;
     margin-bottom: 20px;
-
+    align-items: center;
+    justify-content: space-between;
+    gap:15px;   
+    
 }
     
 .message-submit {
