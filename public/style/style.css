@@ -48,6 +48,12 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 /*Section partners*/
 
 /*Section who-we-are*/
+.who-we-are {
+    width: 100%;
+    height: 450px;
+    background-color: #0a1650;
+}
+
 
 /*Section what-we-do*/
 
