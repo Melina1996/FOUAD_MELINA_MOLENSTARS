@@ -79,15 +79,19 @@ footer {
 }
 
 .aboutus {
-    width: 10%;
+    width: 15%;
+}
+.aboutus ul {
     list-style-type:none;
 }
 
-.ourservices {
-    width: 30%;
-    list-style-type:none;
+.ourservices{
+    width: 35%;
 }
+.ourservices ul {
+    list-style-type:none;}
+
 
 .newsletter {
-    width: 50%;
+    width: 40%;
 }
