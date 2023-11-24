@@ -56,7 +56,28 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 /*Section statistics*/
 
 /*Section news*/
+.news {
+    background-color: blue;
+    background-image:url(../src/images/banner-overlay-img.png);
 
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.news h2,  {
+    color:white;
+    font-family: RobotoBold;
+}
+
+.news h4 {
+    color:white;blue;
+    font-family: RobotoBold;}
 /*Section contact*/
 
 /*FOOTER*/
