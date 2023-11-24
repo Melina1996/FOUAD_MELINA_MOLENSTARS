@@ -49,6 +49,141 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     background-size: cover;
 }
 
+.upperHeader {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.logoHeader img {
+    width: 120px;
+    height: 100px;
+}
+
+
+.navbar {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.my-link {
+    text-decoration: none;
+    color: white;
+    font-family: RobotoRegular;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+.buttonUpperHeader {
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: #0ad3ef;
+    color: white;
+    font-family: RobotoRegular;
+}
+
+.buttonUpperHeader:hover {
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #0ad3ef;
+    background-color: transparent;
+    color: white;
+    font-family: RobotoRegular;
+}
+
+.bottomHeader {
+    width: 100%;
+    height: 500px;
+    height: 70%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.textBottomHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.bottomHeader h1 {
+    font-family: RobotoBold;
+    font-size: 60px;
+    margin: 0;
+}
+
+.bottomHeader p {
+    font-family: RobotoRegular;
+    line-height: 1.5;
+}
+
+
+.buttonsBottomHeader {
+    display: flex;
+    gap: 5px;
+}
+
+.button1BottomHeader {
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: #0ad3ef;
+    color: white;
+    font-family: RobotoRegular;
+}
+
+.button1BottomHeader:hover {
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #0ad3ef;
+    background-color: transparent;
+    color: white;
+    font-family: RobotoRegular;
+}
+
+.button2BottomHeader {
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2152a1;
+    color: white;
+}
+
+.button2BottomHeader:hover {
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid  #2152a1;
+    background-color: transparent;
+    color: white;
+    font-family: RobotoRegular;
+}
+
+.imageBottomHeader img {
+    width: 600px;
+    height: 500px;
+}
+
 /*MAIN*/
 
 .main {
