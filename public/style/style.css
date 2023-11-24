@@ -54,6 +54,17 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 /*Section reliable-it-cyber-security*/
 
 /*Section statistics*/
+.statistics {
+    display:flex;
+    flex-direction: row;
+    width: 100;
+    background-image: url(../src/images/banner-overlay-img.png);
+}
+
+.statistics-leftpanel, .statistics.rightpanel{
+    width: 50%;
+}
+
 
 /*Section news*/
 
