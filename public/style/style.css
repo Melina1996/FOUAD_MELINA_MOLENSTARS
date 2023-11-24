@@ -99,6 +99,21 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     height: 70px;
 }
 
+@keyframes divPartnerLogoUp {
+    50% { 
+        align-items: flex-start;
+    }
+}
+
+
+.divPartnerLogo:hover {
+    background-color: #0ad3ef;
+    animation: divPartnerLogoUp 4s;
+}
+
+
+
+
 /*Section who-we-are*/
 
 /*Section what-we-do*/
