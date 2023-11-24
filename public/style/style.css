@@ -109,6 +109,21 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     gap: 15px;
 }
 
+.myDivWhatWeDo:hover {
+    border: 1px solid #0ad3ef;
+}
+
+
+@keyframes myImageWhatWeDo {
+    50% {
+        justify-content: flex-start;
+       }   
+}
+
+.myDivWhatWeDo:hover {
+    animation: myImageWhatWeDo 3s;
+}
+
 .myDivWhatWeDo p {
     margin: 0;
     padding: 0;
@@ -123,13 +138,42 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     color: white;
 }
 
-.myDivWhatWeDo img {
+.myImageWhatWeDo {
+    width: 180px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.myImageWhatWeDo img {
     width: 50px;
     height: 40px;
 }
 
-.buttonWhatWeDo {
+.myImageWhatWeDoSpecialSize {
+    width: 40px;
+    height: 40px;
+}
 
+.buttonWhatWeDo {
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: #0ad3ef;
+    color: white;
+    font-family: RobotoRegular;
+}
+
+.buttonWhatWeDo:hover {
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #0ad3ef;
+    background-color: transparent;
+    color: white;
+    font-family: RobotoRegular;
 }
 
 /*Section reliable-it-cyber-security*/
