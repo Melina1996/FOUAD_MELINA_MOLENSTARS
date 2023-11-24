@@ -67,12 +67,12 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 }
 
 .containerImageText {
-    width: 80%;
+    width: 70%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .containerDots {
@@ -111,6 +111,7 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     padding: 0;
     margin: 0;
     font-family: RobotoMedium;
+    font-size: 35px;
     color: white;
 }
 
@@ -126,7 +127,7 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 
 .firstP {
     color: #0ad3ef;
-    letter-spacing: 0.1;
+    letter-spacing: 0.1em;
 }
 
 .bulletsWhoWeAre {
