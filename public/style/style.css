@@ -60,3 +60,34 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 /*Section contact*/
 
 /*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    height: fit-content;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../src/images/banner-overlay-img.png);
+}
+
+.logo {
+    width: 20%;
+}
+
+.aboutus {
+    width: 10%;
+    list-style-type:none;
+}
+
+.ourservices {
+    width: 30%;
+    list-style-type:none;
+}
+
+.newsletter {
+    width: 50%;
+}
