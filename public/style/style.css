@@ -58,58 +58,65 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 /*Section news*/
 
 /*Section contact*/
-.contact {
+
+  .contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin: 50px auto;
-    padding: 20px;
+    padding: 50px 0;
     text-align: center;
     background-image: url(../src/images/banner-overlay-img.png);
-  }
-  .name-email-phone {
-    display:flex;
-    flex-direction: row;
-    margin: auto;
-    width: 35%;
-    align-items:center;
-    justify-content: space-evenly;
-  }
-  .contact h1, .contact h2 {
-    color: white; 
-  }
-  
-  .name-email-phone {
-    width: 40%;
-  }
-  .name-email-phone input, .name-email-phone textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  .message-submit {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  .message-submit button {
-    background-color: #00cc99; 
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-family:OswaldMedium;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    font-family:OswaldMedium;
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+    font-family:OswaldMedium;
+}
+
+.name-email-phone {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-bottom: 20px;
+
+}
     
-  }
-  
-  .contact button:hover {
+.message-submit {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.name-email-phone input, .message-submit textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family:OswaldMedium;
+}
+
+.message-submit button {
+    background-color: aqua;
+    padding: 15px 30px;
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 20%;
+    text-align: center;
+}
+
+.contact button:hover {
     background-color: #009977;
-  }
+}
 
 
 /*FOOTER*/
