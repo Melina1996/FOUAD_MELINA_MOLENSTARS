@@ -52,7 +52,96 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     width: 100%;
     height: 450px;
     background-color: #0a1650;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.containerOfConatinerImageText {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImageText {
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.containerDots {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.containerDots img{
+    width: 200px;
+    height: 250px;
+}
+
+.imageWhoWeAre {
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.imageWhoWeAre img {
+    width: 350px;
+    height: 300px;
+}
+
+.textWhoWeAre {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textWhoWeAre h2 {
+    padding: 0;
+    margin: 0;
+    font-family: RobotoMedium;
+    color: white;
+}
+
+.textWhoWeAre p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: RobotoRegular;
+    font-weight: lighter;
+    color: white;
+    font-size: 15px;
+}
+
+.firstP {
+    color: #0ad3ef;
+    letter-spacing: 0.1;
+}
+
+.bulletsWhoWeAre {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bulletWhoWeAre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
 
 
 /*Section what-we-do*/
