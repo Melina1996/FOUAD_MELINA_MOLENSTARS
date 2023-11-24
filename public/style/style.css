@@ -1,0 +1,62 @@
+.body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*FONTS*/
+
+@font-face 
+{ 
+font-family: "OswaldMedium";  
+src: url("/public/src/fonts/OswaldMedium.ttf")format("truetype"); 
+}
+
+@font-face 
+{ 
+font-family: "OswaldRegular";  
+src: url("/public/src/fonts/OswaldRegular.ttf")format("truetype"); 
+}
+
+@font-face 
+{ 
+font-family: "RobotoBold";  
+src: url("/public/src/fonts/RobotoBold.ttf")format("truetype"); 
+}
+
+@font-face 
+{ 
+font-family: "RobotoMedium";  
+src: url("/public/src/fonts/RobotoMedium.ttf")format("truetype"); 
+}
+
+@font-face 
+{ 
+font-family: "RobotoRegular";  
+src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype"); 
+}
+
+
+/*HEADER*/
+
+/*MAIN*/
+
+.main {
+    width: 100%;
+}
+
+/*Section partners*/
+
+/*Section who-we-are*/
+
+/*Section what-we-do*/
+
+/*Section reliable-it-cyber-security*/
+
+/*Section statistics*/
+
+/*Section news*/
+
+/*Section contact*/
+
+/*FOOTER*/
