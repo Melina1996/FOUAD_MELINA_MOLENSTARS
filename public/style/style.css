@@ -635,8 +635,10 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     width: 100%;
     height: 1000px;
     align-items: center;
-    justify-content: center;
-    background-image:url(../src/images/banner-overlay-img.png);
+    justify-content: space-evenly;
+    background-image:url(../src/images/overly-img.png);
+    background-color: #122061;
+    padding: 50px;
 }
 
 .statistics-leftpanel{
@@ -668,19 +670,28 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     justify-content: flex-start;
     padding: 20px;
     padding-right: 100px;
+    max-width: 40%;
 }
 
 .statistics-rightpanel h4 {
     color: aqua;
+    font-size: 24px; 
+    font-weight: 700;
 }
 .statistics-rightpanel h2, p {
     color:white;
+    font-size: 32px; 
+    margin-bottom: 20px;
+}
+.statistics-rightpanel p {
+    line-height: 1.6; 
+    font-size: 18px
 }
 
 .card {
     /* flex-basis: calc(50% - 10px); */
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -690,11 +701,14 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     /* margin-bottom: 10px; */
     border-radius: 10px;
     padding:20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+
 }
 
 .card img {
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
     padding-top: 5px;
     
 }
@@ -716,8 +730,13 @@ button {
     padding: 15px 32px;
     font-size: 16px;
     border: none;
-    border-radius: 5px;}
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; }
 
+button:hover {
+        background-color: #367c39; 
+    }
 
 
 /* Section news */
@@ -770,7 +789,7 @@ button {
   }
   
   .news-text h3 {
-    font-size: 1.2em; /  }
+    font-size: 1.2em;   }
   
 
 
@@ -783,23 +802,23 @@ button {
     width: 100%;
     padding: 50px 0;
     text-align: center;
-    background-image: url('path-to-your-image.jpg'); /* Make sure to use the correct path */
+    background-image: url(../src/images/banner-right-img.png);
     background-size: cover;
     background-position: center;
-    background-color: #0a1650; /* This will only show if the image doesn't load */
+    background-color: #0a1650;
     color: white;
-    font-family: 'RobotoRegular', sans-serif;
+    font-family: 'RobotoRegular';
     flex-wrap: wrap;
 }
 
 .contact h2 {
     margin-bottom: 10px;
-    font-family: 'OswaldMedium', sans-serif;
+    font-family: 'OswaldMedium'f;
 }
 
 .contact h1 {
     margin-bottom: 20px;
-    font-family: 'OswaldMedium', sans-serif;
+    font-family: 'OswaldMedium';
 }
 
 .name-email-phone {
@@ -825,7 +844,7 @@ button {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
     color: white;
-    font-family: 'OswaldMedium', sans-serif;
+    font-family: 'OswaldMedium';
 }
 
 .message-submit button {
@@ -835,8 +854,8 @@ button {
     margin-top: 20px;
     border-radius: 50%;
     text-align: center;
-    border: none; /* Add this to remove the default border */
-    cursor: pointer; /* Changes the cursor to signify the button is clickable */
+    border: none; 
+    cursor: pointer; 
     font-family: 'OswaldMedium', sans-serif;
 }
 
@@ -845,69 +864,6 @@ button {
 }
 
 
-/* .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-
-    background-color: #0a1650;
-    color: white;
-    font-family:RobotoRegular;
-    flex-wrap: wrap;
-}
-
-.contact h2 {
-    margin-bottom: 10px;
-    font-family:OswaldMedium;
-}
-
-.contact h1 {
-    margin-bottom: 20px;
-    font-family:OswaldMedium;
-}
-
-.name-email-phone {
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: space-between;
-    gap:15px;   
-    
-}
-    
-.message-submit {
-    width: 40%;
-    margin-bottom: 20px;
-}
-
-.name-email-phone input, .message-submit textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    font-family:OswaldMedium;
-}
-
-.message-submit button {
-    background-color: aqua;
-    padding: 15px 30px;
-    width: 20%;
-    margin-top: 20px;
-    border-radius: 20%;
-    text-align: center;
-}
-
-.contact button:hover {
-    background-color: #009977;
-} */
 
 
 /*FOOTER*/
