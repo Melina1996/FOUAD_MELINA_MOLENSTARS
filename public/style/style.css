@@ -507,6 +507,70 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 
 /*Section contact*/
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-image: url(../src/images/banner-overlay-img.png);
+    color: white;
+    font-family:OswaldMedium;
+    flex-wrap: wrap;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    font-family:OswaldMedium;
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+    font-family:OswaldMedium;
+}
+
+.name-email-phone {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap:15px;   
+    
+}
+    
+.message-submit {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.name-email-phone input, .message-submit textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family:OswaldMedium;
+}
+
+.message-submit button {
+    background-color: aqua;
+    padding: 15px 30px;
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 20%;
+    text-align: center;
+}
+
+.contact button:hover {
+    background-color: #009977;
+}
+
+
 /*FOOTER*/
 
 footer {
