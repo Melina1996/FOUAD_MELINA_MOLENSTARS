@@ -719,29 +719,59 @@ button {
     border-radius: 5px;}
 
 
-/*Section news*/
+
+/* Section news */
 .news {
     background-color: blue;
     background-image:url(../src/images/banner-overlay-img.png);
-
     display: flex;
     flex-direction: column;
     margin: auto;
-
     align-items: center;
     justify-content: center;
-}
-
-
-
-.news h2  {
-    color:white;
-    font-family: RobotoBold;
-}
-
-.news h4 {
-    color:white;
-    font-family: RobotoBold;}
+  }
+  
+  .news h2, .news h4 {
+    color: white;
+    font-family: 'RobotoBold';
+  }
+  
+  .news-pictures {
+    display: flex;
+  }
+  
+  .news-item {
+    position: relative;
+    margin: 10px;
+  }
+  
+  .news-item img {
+    width: 100%; 
+    display: block;
+  }
+  
+  .news-text {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    color: white;
+    text-align: left;
+  }
+  
+  .news-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  .news-text p {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  
+  .news-text h3 {
+    font-size: 1.2em; /  }
+  
 
 
 /*Section contact*/
