@@ -486,7 +486,7 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 
 /*Section reliable-it-cyber-security*/
 
-<<<<<<< HEAD
+
 .reliable-it-cyber-security {
     width: 100%;
     height: 600px;
@@ -742,6 +742,8 @@ button {
 .news h4 {
     color:white;
     font-family: RobotoBold;}
+
+
 /*Section contact*/
 
 .contact {
@@ -751,9 +753,10 @@ button {
     width: 100%;
     padding: 50px 0;
     text-align: center;
-    background-image: url(../src/images/banner-overlay-img.png);
+    background-image: url(../src/images/dots-img.png);
+    background-color: #0a1650;
     color: white;
-    font-family:OswaldMedium;
+    font-family:RobotoRegular;
     flex-wrap: wrap;
 }
 
@@ -813,10 +816,9 @@ button {
 footer {
     display: flex;
     flex-direction: row;
-    margin:auto;
+    /* margin:auto; */
     height: 400px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding:50px 500px;
     align-items: center;
     justify-content: flex-end;
     justify-items: flex-end;
