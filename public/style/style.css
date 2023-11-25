@@ -633,16 +633,16 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 1000px;
+    height: 800px;
     align-items: center;
     justify-content: space-evenly;
     background-image:url(../src/images/overly-img.png);
     background-color: #122061;
-    padding: 50px;
+
 }
 
 .statistics-leftpanel{
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -669,8 +669,8 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px;
-    padding-right: 100px;
-    max-width: 40%;
+    /* padding-right: 100px; */
+    width: 20%;
 }
 
 .statistics-rightpanel h4 {
@@ -678,7 +678,7 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     font-size: 24px; 
     font-weight: 700;
 }
-.statistics-rightpanel h2, p {
+.statistics-rightpanel h2, .statistics-rightpanel p {
     color:white;
     /* font-size: 32px;  */
     margin-bottom: 20px;
@@ -702,7 +702,11 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     border-radius: 10px;
     padding:20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
 
+.card:hover {
+    background-color: #0ad3ef;
+    animation: divPartnerLogoUp 4s;
 }
 
 .card img {
