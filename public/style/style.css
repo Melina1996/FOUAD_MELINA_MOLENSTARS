@@ -40,7 +40,7 @@ h5 {
 p { 
     font-family: RobotoRegular;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
     color: #4960ae;
@@ -86,7 +86,7 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 
     background-image: url(../src/images/banner-overlay-img.png);
     background-color: #0a1650; /*to add blue color to background image*/
-    min-height: 700px;
+    min-height: 650px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +99,7 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     display: flex; /*want image and navbar next to each other*/
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 110px;
 }
 
 .logoHeader img {
@@ -114,7 +114,7 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     display: flex; /*links next to each other*/
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .my-link {
@@ -149,7 +149,6 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 .bottomHeader {
     width: 100%;
     height: 500px;
-    height: 70%;
     color: white;
 
     display: flex; /*text and image next to each other*/
@@ -162,12 +161,13 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
     width: 90%; /*in order to get some border left and right*/
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .textBottomHeader {
-    width: 50%; /*50% of container*/
+    width: 40%; /*40% of container*/
+    padding-top: 45px; 
 
     display: flex;
     flex-direction: column; 
@@ -237,8 +237,8 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 }
 
 .imageBottomHeader img {
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
 }
 
 /*MAIN*/
@@ -251,14 +251,21 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 
 .partners {
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-color: #0a1650;
 
     display: flex; /*position divs with logos on one line*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+}
+
+.partners h4 {
+    margin-bottom: 15px;
+}
+
+.partners h2 {
+    margin-bottom: 30px;
 }
 
 .partnersLogos {
@@ -270,9 +277,9 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 }
 
 .divPartnerLogo {
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
+    width: 120px;
+    height: 120px;
+    border-radius: 7px;
     background-color: #17256e;
 
     display: flex;
@@ -286,8 +293,13 @@ src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype");
 }
 
 @keyframes divPartnerLogoUp { /*moves img on the y-axis*/
+    0% {
+        filter: brightness(0) invert(1); /*img turns white directly with hover*/
+    }
+    
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-15px);
+        filter: brightness(0) invert(1);
        } 
 }
 
@@ -305,7 +317,7 @@ background-color: #0ad3ef;
 /*Section who-we-are*/
 .who-we-are {
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-color: #0a1650;
 
     display: flex; /*elements on one line*/
@@ -334,7 +346,7 @@ background-color: #0ad3ef;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 .womanWhoWeAre {
@@ -347,8 +359,8 @@ background-color: #0ad3ef;
 }
 
 .womanWhoWeAre img {
-    width: 350px;
-    height: 300px;
+    width: 450px;
+    height: 400px;
 }
 
 .textWhoWeAre {
@@ -397,19 +409,33 @@ background-color: #0ad3ef;
     align-items: center;
 }
 
+.headerSectionWhatWeDo h4 {
+    margin-bottom: 15px;
+}
+
+.secondH2 {
+    margin-bottom: 15px;
+}
+
+.myDivsWhatWeDo p {
+    line-height: 1.4;
+}
+
 .myDivsWhatWeDo {
     display: flex; /*divs with text are set on 1 line*/
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .myDivWhatWeDo {
-    width: 180px;
-    height: 240px;
+    width: 160px;
+    height: 220px;
     background-color: #17256e;
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: 7px;
+    padding: 15px;
+    border: 1px solid #17256e; 
 
     display: flex;
     flex-direction: column;
@@ -480,6 +506,7 @@ background-color: #0ad3ef;
 
 .textAndPercentages {
     width: 70%;
+    padding-right: 10px;
 
     display: flex;
     flex-direction: column;
@@ -523,10 +550,14 @@ background-color: #0ad3ef;
     gap: 10px;
 }
 
+.text h2 {
+    font-size: 40px;
+}
+
 .dotsAndText img {
     transform: rotate(180deg); /*need to rotate the original image*/
-    width: 250px;
-    height: 300px;
+    width: 230px;
+    height: 280px;
 }
 
 
@@ -543,11 +574,11 @@ background-color: #0ad3ef;
 }
 
 .square {
-    width: 350px;
-    height: 200px;
+    width: 310px;
+    height: 180px;
     background-color: #0ad3ef;
     border-top-left-radius: 5px;
-    padding: 20px;
+    padding: 30px;
 
     display: flex;
     flex-direction: column;
@@ -572,7 +603,7 @@ background-color: #0ad3ef;
 
 .statistics {
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-image: url(../src/images/overly-img.png);
     background-color: #122061;
     background-position: center;
@@ -582,36 +613,30 @@ background-color: #0ad3ef;
     display: flex; /*elements "containerStatistics" and text on one row*/
     align-items: center;
     justify-content: center;
+    gap: 40px;
 }
 
-.containerStatistics {
-    width: 80%; /*to get some margin around the elements block*/
-
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
 
 .statistics-leftpanel{
     width: 50%;
     display: flex;
+    align-items: flex-end;
     flex-direction: column; /*want the two rows of each two divs in a column*/
-    gap: 20px;    
+    gap: 25px;    
 }
 
 .statistics-leftpanel-up {
     display: flex; /*two divs next to each other*/
     align-content:space-around;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 25px;
 }
 
 .statistics-leftpanel-down {
     display: flex;
     align-content: space-around;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 25px;
 }
 
 .statistics-rightpanel {
@@ -623,13 +648,17 @@ background-color: #0ad3ef;
     gap: 10px;
 }
 
+.statistics-rightpanel p {
+    padding-right: 250px;
+    margin-bottom: 15px;
+}
+
 .card {
-    height: 200px;
-    width: 200px;
+    height: 140px;
+    width: 140px;
     background-color: #17256e;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
 
     display: flex; 
     flex-direction: column;
@@ -638,8 +667,8 @@ background-color: #0ad3ef;
 }
 
 .card img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 20px;
     padding-top: 5px;
     
@@ -677,7 +706,7 @@ background-color: #0ad3ef;
 /* Section news */
 .news {
     background-color:#0a1650;
-    height: 450px;
+    height: 550px;
     padding-bottom: 20px;
 
     display: flex; 
@@ -698,7 +727,14 @@ background-color: #0ad3ef;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    gap: 20px;
+  }
+
+  .containerNewsSection h4 {
+    margin-bottom: 15px;
+  }
+
+  .containerNewsSection h2 {
+    margin-bottom: 20px;
   }
 
   .news-pictures {
@@ -708,32 +744,30 @@ background-color: #0ad3ef;
   
   .news-pictures img {
     width: 400px;
-    height: 300px;
+    height: 400px;
   }
 
 .news-item img {
-    transition: transform .5s ease-in-out; 
+    transition: transform 1s ease-in-out; 
 }
 
 .news-item img:hover {
-    transform: scale(1.3) rotate(18deg);/*scale defines "zoom" of image and "rotate" the rotation*/
+    transform: scale(1.2) rotate(10deg);/*scale defines "zoom" of image and "rotate" the rotation*/
 }
 
-  .news-item {
+.news-item {
     position: relative;
-    width: 300px;
-    overflow: hidden; /*this property makes animation stay within the parent div, otherwise size of image would go bigger*/
+    width: 400px;
+    overflow: hidden;
+    display: flex; /*this property makes animation stay within the parent div, otherwise size of image would go bigger*/
   }
   
-  .news-item img {
-    width: 100%; 
-    display: block;
-  }
   
-  .news-text {
+.news-text {
     position: absolute;
-    bottom: 10px; 
-    left: 10px; 
+    bottom: 20px; 
+    left: 20px; 
+    right: 10px;
     color: white;
     text-align: left;
 
@@ -741,7 +775,17 @@ background-color: #0ad3ef;
     flex-direction: column;
     gap: 5px;
 }
+
+.news-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
     
+.news-text h5 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
   .news-text h5:hover, h3:hover { /*transitions via pseudo-selector:hover*/
     color: #0ad3ef;
   }
@@ -762,7 +806,7 @@ background-color: #0ad3ef;
 
 .contact {
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-color: #0a1650;
 
     display: flex;
@@ -784,32 +828,48 @@ background-color: #0ad3ef;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    gap: 10px;
+}
+
+.containerContactSection h4 {
+    margin-bottom: 20px;
+}
+
+.containerContactSection h2 {
+    margin-bottom: 30px;
 }
 
 .name-email-phone {
     display: flex; /*first 3 input fields on one row*/
     align-items: center;
     gap: 15px;   
+    margin-bottom: 25px;
 }
 
 #name, #Email, #phone { /*properties of each input field*/
     padding: 10px;
-    color: #4960ae;
-    width: 150px;
+    width: 240px;
     border-radius: 5px;
-    border: 1px solid #4960ae;
+    border: 1px solid #12215c;
     background-color:rgba(0, 0, 0, 0); /*gets transparent*/
+}
+
+::placeholder { /*allows me to change font-color*/
+    color: #4960ae;
+    font-family: RobotoRegular;
 }
 
 #message {
     padding: 10px;
-    height: 100px;
-    width: 526px;
-    color: #4960ae;
     border-radius: 5px;
-    border: 1px solid #4960ae;
+    margin-bottom: 35px;
+    height: 100px;
+    width: 795px;
+    border: 1px solid #12215c;
     background-color:rgba(0, 0, 0, 0);/*gets transparent*/
+}
+
+input:focus, textarea:focus {
+    outline: none; /*any input effects are deleted when clicking on it*/
 }
 
 .buttonContactSection  {
@@ -839,7 +899,7 @@ background-color: #0ad3ef;
 footer {
     width: 100%;
     display: flex;
-    height: 500px;
+    height: 450px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -867,7 +927,7 @@ footer p {
 }
 
 .containerUpperFooter {
-    width: 80%; /*to gain some margin in relation to parent container*/
+    width: 55%; /*to gain some margin in relation to parent container*/
 
     display: flex;
     justify-content: flex-start;
@@ -876,16 +936,21 @@ footer p {
 }
 
 .logo {
-    width: 25%;
+    width: 35%;
+}
+
+.logo p {
+    line-height: 1.9em;
 }
 
 .logo img {
-    width: 120px;
-    height: 100px;
+    width: 160px;
+    height: 140px;
+    margin-bottom: 15px;
 }
 
 .aboutus {
-    width: 25%;
+    width: 15%;
 
     display: flex;
     flex-direction: column; 
@@ -904,8 +969,8 @@ footer p {
 }
 
 .myIcons img {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
 }
 
 .newsletter {
@@ -929,10 +994,15 @@ footer p {
 
 .checkbox {
     display: flex;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    outline: 1px solid #0ad3ef;
 }
 
 .bottomFooter {
-    height: 100px;
+    height: 50px;
 
     display: flex;
     justify-content: center;
@@ -1022,6 +1092,10 @@ footer p {
         width: 90px;
         height: 80px;
     }
+
+    .navbar {
+        gap: 20px;
+    }
     
     .bottomHeader h1 {
         font-size: 30px;
@@ -1108,7 +1182,7 @@ footer p {
 @media (min-width: 321px) and (max-width: 425px){
 
     .partners {
-        height: 500px;
+        height: 700px;
     }
 
     .partnersLogos {
@@ -1266,7 +1340,7 @@ footer p {
         align-items: flex-end;
         justify-content: center;
         gap: 30px;
-        height: 800px; /*has to get bigger as a result of the column*/
+        height: 900px; /*has to get bigger as a result of the column*/
     }
 
     .imageAndSquare {
@@ -1291,6 +1365,10 @@ footer p {
     .square {
         width: 180px;
         height: 100px;
+    }
+
+    .text h2 {
+        font-size: 25px;
     }
 }
 
@@ -1324,6 +1402,10 @@ footer p {
         width: 100%;
     }
 
+    .text h2 {
+        font-size: 25px;
+    } 
+    
     .imageAndSquare {
         width: 100%; /*takes in 100% as its in the next row/column and supposed to be taking the whole width up*/
         height: 420px;
@@ -1376,6 +1458,10 @@ footer p {
         padding-top: 5px;
         
     }
+
+    .statistics-rightpanel p{
+        padding-right: 50px;
+    }
 } 
 
 /*Mobile L*/
@@ -1389,10 +1475,15 @@ footer p {
 
     .statistics-leftpanel {
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .statistics-rightpanel {
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .card { /*cards get smaller*/
@@ -1413,13 +1504,25 @@ footer p {
         padding-top: 5px;
         
     }
+
+    .statistics-rightpanel p{
+        padding-right: 5px;
+        padding-left: 5px
+    }
+
+    .statistics {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
 } 
 
 /*Mobile M*/
 @media (min-width: 321px) and (max-width: 375px){
     
     .statistics {
-        height: 1100px;
+        height: 1200px;
+        flex-direction: column;
     }
     
     .containerStatistics { 
@@ -1429,6 +1532,8 @@ footer p {
 
     .statistics-leftpanel {
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .statistics-leftpanel-up {
@@ -1439,6 +1544,9 @@ footer p {
 
     .statistics-rightpanel {
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .statistics-leftpanel-down {/*row of each two cards turned into column*/
@@ -1465,6 +1573,11 @@ footer p {
         padding-top: 5px;
         
     }
+
+    .statistics-rightpanel p{
+        padding-right: 5px;
+        padding-left: 5px
+    }
 } 
 
 /*NEWS SECTION*/
@@ -1482,6 +1595,10 @@ footer p {
     .dotsNewsSection {
         display: none; /*dots image hidden*/
 }
+    .news-item {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 /*Mobile M & L*/
@@ -1496,8 +1613,32 @@ footer p {
     }
 
     .news-pictures {
-        flex-direction: column; /*images in column*/
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;/*images in column*/
     }
+
+    .news-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .news-item img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .news-text h3 {
+        font-size: 15px;
+        display: flex;
+    }
+
+    .news-text {
+        padding-right: 150px;
+        padding-left: 70px;
+    }
+
+
 }
 
 /*Contact Section*/
@@ -1512,10 +1653,21 @@ footer p {
 }
 }
 
+/*Tablet*/
+@media (min-width: 426px) and (max-width: 768px){
+    #name, #email, #phone {
+        width: 150px;
+    }
+
+    #message {
+        width: 612px;
+    }
+}
+
 /*Mobile M & L*/
 @media (min-width: 321px) and (max-width: 425px){
     .contact {
-        height: 450px;
+        height: 550px;
     }
     
     .contact img {
@@ -1527,7 +1679,7 @@ footer p {
     }
 
     #message {
-        width: 150px;
+        width: 240px;
     }
 }
 
@@ -1542,6 +1694,9 @@ footer p {
         width: 80px;
         height: 65px;
 }
+    .containerUpperFooter {
+        width: 80%;
+    }
 }
 
 /*Mobile M & L*/
