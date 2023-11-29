@@ -51,32 +51,33 @@ p {
 @font-face 
 { 
 font-family: "OswaldMedium";  
-src: url("/public/src/fonts/OswaldMedium.ttf")format("truetype"); 
+src: url("./../src/fonts/OswaldMedium.ttf"); 
 }
 
 @font-face 
 { 
 font-family: "OswaldRegular";  
-src: url("/public/src/fonts/OswaldRegular.ttf")format("truetype"); 
+src: url("./../src/fonts/OswaldRegular.ttf"); 
 }
 
 @font-face 
 { 
 font-family: "RobotoBold";  
-src: url("/public/src/fonts/RobotoBold.ttf")format("truetype"); 
+src: url("./../src/fonts/RobotoBold.ttf");
 }
 
 @font-face 
 { 
 font-family: "RobotoMedium";  
-src: url("/public/src/fonts/RobotoMedium.ttf")format("truetype"); 
+src: url("./../src/fonts/RobotoMedium.ttf"); 
 }
 
 @font-face 
 { 
 font-family: "RobotoRegular";  
-src: url("/public/src/fonts/RobotoRegular.ttf")format("truetype"); 
+src: url("./../src/fonts/RobotoRegular.ttf"); 
 }
+
 
 
 /*HEADER*/
