@@ -752,7 +752,7 @@ background-color: #0ad3ef;
 }
 
 .news-item img:hover {
-    transform: scale(1.2) rotate(10deg);/*scale defines "zoom" of image and "rotate" the rotation*/
+    transform: scale(1.05) rotate(2deg);/*scale defines "zoom" of image and "rotate" the rotation*/
 }
 
 .news-item {
