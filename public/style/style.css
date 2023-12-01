@@ -1162,7 +1162,7 @@ input[type="checkbox"] {
 @media (min-width: 321px) and (max-width: 425px){
 
     .header {
-        min-height: 800px; 
+        min-height: 700px; 
     }
 
     .upperHeader {
@@ -1232,7 +1232,7 @@ input[type="checkbox"] {
 @media (min-width: 321px) and (max-width: 425px){
 
     .partners {
-        height: 700px;
+        height: 650px;
     }
 
     .partnersLogos {
@@ -1283,7 +1283,7 @@ input[type="checkbox"] {
 @media (min-width: 321px) and (max-width: 425px){
     
     .who-we-are {
-        height: 700px; /*set bigger height as elements are organized in a column*/
+        height: 650px; /*set bigger height as elements are organized in a column*/
     }
     
     .secondContainerImageText {
@@ -1335,7 +1335,7 @@ input[type="checkbox"] {
 @media (min-width: 321px) and (max-width: 425px){
     
     .what-we-do {
-        height: 700px;
+        height: 750px;
     }
     
     .myDivsWhatWeDo{
@@ -1422,8 +1422,8 @@ input[type="checkbox"] {
     }
 
     .square {
-        width: 180px;
-        height: 100px;
+        width: 120px;
+        height: 70px;
     }
 
     .text h2 {
@@ -1435,7 +1435,7 @@ input[type="checkbox"] {
 @media (min-width: 321px) and (max-width: 425px){
 
     .reliable-it-cyber-security {
-        height: 900px; /*has to get bigger as a result of the column*/
+        height: 850px; /*has to get bigger as a result of the column*/
         padding-top: 20px;
 
         flex-direction: column;
@@ -1467,17 +1467,25 @@ input[type="checkbox"] {
     
     .imageAndSquare {
         width: 100%; /*takes in 100% as its in the next row/column and supposed to be taking the whole width up*/
-        height: 420px;
+        height: 500px;
     }
 
     .square {
-        width: 200px;
+        width: 150px;
         height: 100px;
     }
 
+    .square h5{
+        font-size: 12px;
+    }
+
+    .square p {
+        font-size: 10px;
+    }
+
     .square img {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
     }
 
 }
@@ -1572,7 +1580,7 @@ input[type="checkbox"] {
     .statistics {
         display: flex;
         flex-direction: column;
-        height: 700px;
+        height: 650px;
     }
 } 
 
@@ -1580,7 +1588,7 @@ input[type="checkbox"] {
 @media (min-width: 321px) and (max-width: 375px){
     
     .statistics {
-        height: 1200px;
+        height: 1100px;
         flex-direction: column;
     }
     
@@ -1664,7 +1672,7 @@ input[type="checkbox"] {
 @media (min-width: 321px) and (max-width: 425px){
     
     .news {
-        height: 700px; /*gets bigger as elements are one on top of each other/column*/
+        height: 650px; /*gets bigger as elements are one on top of each other/column*/
     }
     
     .dotsNewsSection {
@@ -1726,7 +1734,7 @@ input[type="checkbox"] {
 /*Mobile M & L*/
 @media (min-width: 321px) and (max-width: 425px){
     .contact {
-        height: 550px;
+        height: 500px;
     }
     
     .contact img {
@@ -1762,7 +1770,7 @@ input[type="checkbox"] {
 @media (min-width: 321px) and (max-width: 425px){
 
     footer {
-        height: 700px;
+        height: 650px;
     }
 
     .upperFooter {
@@ -1776,6 +1784,7 @@ input[type="checkbox"] {
     .containerUpperFooter {/*divs automatically move into next row*/
         flex-wrap: wrap;
         justify-content: center;
+        width: 80%;
     }
 
     .logo {
@@ -1783,6 +1792,7 @@ input[type="checkbox"] {
         display: flex;
         gap: 20px;
     }
+
 
     .logo img {
         width: 80px;
