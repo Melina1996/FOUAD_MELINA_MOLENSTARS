@@ -1347,6 +1347,15 @@ input[type="checkbox"] {
         height: 200px;
         padding: 10px; 
     }
+
+    .headerSectionWhatWeDo {
+        text-align: center;
+        width: 80%;
+    }
+
+    .secondH2 {
+        width: 80%;
+    }
 }
 
 /*SECTION CYBER SECURITY*/
