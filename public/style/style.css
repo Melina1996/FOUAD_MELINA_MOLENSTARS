@@ -873,6 +873,55 @@ input:focus, textarea:focus {
     outline: none; /*any input effects are deleted when clicking on it*/
 }
 
+input[type=checkbox] { /* Hide the default checkbox */ 
+    visibility: hidden;
+}
+
+.my-checkbox {
+    display: block; 
+    position: relative; 
+    padding-left: 25px; 
+    cursor: pointer; 
+    font-size: 20px; 
+} 
+
+.blueBorder { /* Creating a custom checkbox 
+    based on demand */ 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 13px; 
+    width: 13px; 
+    border: 2px solid aqua;
+    border-radius: 3px;
+} 
+
+.blueBorder:after {  /* Checkmark to be shown in checkbox */ 
+    /* It is not be shown when not checked */ 
+    content: ""; 
+    position: absolute; 
+    display: none; 
+} 
+
+.my-checkbox input:checked ~ .blueBorder:after {  /* Display checkmark when checked */ 
+    display: block; 
+} 
+
+.my-checkbox .blueBorder:after { /* Styling the checkmark using webkit */ 
+    /* Rotated the rectangle by 45 degree and  
+    showing only two border to make it look 
+    like a tickmark */
+    left: 4px; 
+    bottom: 2px; 
+    width: 4px; 
+    height: 10px; 
+    border: solid white; 
+    border-width: 0 2px 2px 0; 
+    -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+}
+
 .buttonContactSection  {
     width: 120px;
     height: 40px;
