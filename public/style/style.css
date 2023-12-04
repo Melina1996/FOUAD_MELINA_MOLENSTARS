@@ -583,8 +583,8 @@ background-color: #0ad3ef;
 }
 
 .square {
-    width: 310px;
-    height: 180px;
+    width: 290px;
+    height: 165px;
     background-color: #0ad3ef;
     border-top-left-radius: 5px;
     padding: 30px;
@@ -983,6 +983,8 @@ footer p {
 .myIcons img {
     width: 12px;
     height: 12px;
+    margin-right: 12px;
+    margin-top: 10px;
 }
 
 .newsletter {
@@ -993,11 +995,11 @@ footer p {
     gap: 20px;
 }
 form {
-    background-color: #122061;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 5px;
-    border: 1px solid #4960ae;
+    border: 1px solid #18286b;
+    background-color:rgba(0, 0, 0, 0);
     width: 200px;
 }
 
@@ -1026,7 +1028,7 @@ To display the icon we inport an image.*/
     margin: 0;
     border: 1px solid transparent;
     border-radius: inherit;
-    background: transparent url("./../src/images/submit-img.png") no-repeat center;
+    background: transparent url("./../src/images/submit-img.png") no-repeat right;
     cursor: pointer;
     opacity: 0.7;
   }
@@ -1675,7 +1677,7 @@ input[type=checkbox] { /* Hide the default checkbox */
     .statistics {
         display: flex;
         flex-direction: column;
-        height: 650px;
+        height: 700px;
     }
 } 
 
