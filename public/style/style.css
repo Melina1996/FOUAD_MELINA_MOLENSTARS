@@ -862,6 +862,9 @@ background-color: #0ad3ef;
     background-color:rgba(0, 0, 0, 0); /*gets transparent*/
 }
 
+
+
+
 ::placeholder { /*allows me to change font-color*/
     color: #4960ae;
     font-family: RobotoRegular;
@@ -879,55 +882,6 @@ background-color: #0ad3ef;
 
 input:focus, textarea:focus {
     outline: none; /*any input effects are deleted when clicking on it*/
-}
-
-input[type=checkbox] { /* Hide the default checkbox */ 
-    visibility: hidden;
-}
-
-.my-checkbox {
-    display: block; 
-    position: relative; 
-    padding-left: 25px; 
-    cursor: pointer; 
-    font-size: 20px; 
-} 
-
-.blueBorder { /* Creating a custom checkbox 
-    based on demand */ 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    height: 13px; 
-    width: 13px; 
-    border: 2px solid aqua;
-    border-radius: 3px;
-} 
-
-.blueBorder:after {  /* Checkmark to be shown in checkbox */ 
-    /* It is not be shown when not checked */ 
-    content: ""; 
-    position: absolute; 
-    display: none; 
-} 
-
-.my-checkbox input:checked ~ .blueBorder:after {  /* Display checkmark when checked */ 
-    display: block; 
-} 
-
-.my-checkbox .blueBorder:after { /* Styling the checkmark using webkit */ 
-    /* Rotated the rectangle by 45 degree and  
-    showing only two border to make it look 
-    like a tickmark */
-    left: 4px; 
-    bottom: 2px; 
-    width: 4px; 
-    height: 10px; 
-    border: solid white; 
-    border-width: 0 2px 2px 0; 
-    -webkit-transform: rotate(45deg); 
-    -ms-transform: rotate(45deg); 
-    transform: rotate(45deg); 
 }
 
 .buttonContactSection  {
@@ -1038,25 +992,105 @@ footer p {
     flex-direction: column;
     gap: 20px;
 }
-
-#email {
+form {
     background-color: #122061;
-    color: #4960ae;
-    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 5px;
     border: 1px solid #4960ae;
-    padding-right: 10px;
-    background: url(../src/images/submit-img.png) no-repeat right;
-    background-size: 20px;
+    width: 200px;
 }
 
-.checkbox {
-    display: flex;
-    gap: 10px;
+/*set styles for email input box*/
+
+input[type="email"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 12px;
+  }
+  
+  input[type="email"]::placeholder {
+    color: #4960ae;
+  }
+
+/*Styling to the submit button. Text of the button hidden with text-indent and overflow properties, and display in its place an icon.
+To display the icon we inport an image.*/
+
+  button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 45px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("./../src/images/submit-img.png") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 1;
+    border: none;
+  }
+
+  /*set the :focus state on input and button elements, eliminate any predefined effects:*/
+  button[type="submit"]:focus, input[type="email"]:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
 }
 
-input[type="checkbox"] {
-    outline: 1px solid #0ad3ef;
+
+input[type=checkbox] { /* Hide the default checkbox */ 
+    visibility: hidden;
+}
+
+.my-checkbox {
+    display: block; 
+    position: relative; 
+    padding-left: 25px; 
+    cursor: pointer; 
+    font-size: 20px; 
+} 
+
+.blueBorder { /* Creating a custom checkbox 
+    based on demand */ 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 13px; 
+    width: 13px; 
+    border: 2px solid aqua;
+    border-radius: 3px;
+} 
+
+.blueBorder:after {  /* Checkmark to be shown in checkbox */ 
+    /* It is not be shown when not checked */ 
+    content: ""; 
+    position: absolute; 
+    display: none; 
+} 
+
+.my-checkbox input:checked ~ .blueBorder:after {  /* Display checkmark when checked */ 
+    display: block; 
+} 
+
+.my-checkbox .blueBorder:after { /* Styling the checkmark using webkit */ 
+    /* Rotated the rectangle by 45 degree and  
+    showing only two border to make it look 
+    like a tickmark */
+    left: 4px; 
+    bottom: 2px; 
+    width: 4px; 
+    height: 10px; 
+    border: solid white; 
+    border-width: 0 2px 2px 0; 
+    -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    transform: rotate(45deg); 
 }
 
 .bottomFooter {
